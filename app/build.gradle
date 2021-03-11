@@ -12,6 +12,16 @@ android {
 //                storeFile file('../debug.keystore')
 //            }
 //        }
+        release {
+
+//            def credsFilePath = file("../credentials.json").toString()
+//            def credsFile = new File(credsFilePath, "").getText('UTF-8')
+//            def json = new groovy.json.JsonSlurper().parseText(credsFile)
+//            storeFile file(json.android.storeFile)
+//            storePassword = json.android.storePassword
+//            keyAlias = json.android.keyAlias
+//            keyPassword = json.android.keyPassword
+        }
     }
 
     defaultConfig {
@@ -23,10 +33,18 @@ android {
 
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
     buildTypes {
         release {
-            minifyEnabled false
+            signingConfig signingConfigs.release
+            debuggable false
+            minifyEnabled true
+
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
