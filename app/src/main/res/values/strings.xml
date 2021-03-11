@@ -9,4 +9,14 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="phone_label">Nr Cel</string>
+    <string name="submit_sign_up">Obtener Cel</string>
+
+    <string name="reset_title">Reset your verification</string>
+    <string name="sign_up_title">Sign Up to SMS Verify</string>
+    <string name="menu_setting_title">Settings</string>
+    <string name="sorry_for_not_permission">Lo sentimos, no podemos escanear el código de barras sin su permiso.</string>
+    <string name="camera_permission_granted">Camera Permisos Otorgados.</string>
+    <string name="bt_numero_cel">VERIFICAR NUMERO</string>
+    <string name="btn_cambiar_numero">CAMBIAR NUMERO</string>
 </resources>
