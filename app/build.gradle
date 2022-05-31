@@ -14,19 +14,19 @@ android {
 //        }
         release {
 
-//            def credsFilePath = file("../credentials.json").toString()
-//            def credsFile = new File(credsFilePath, "").getText('UTF-8')
-//            def json = new groovy.json.JsonSlurper().parseText(credsFile)
-//            storeFile file(json.android.storeFile)
-//            storePassword = json.android.storePassword
-//            keyAlias = json.android.keyAlias
-//            keyPassword = json.android.keyPassword
+            def credsFilePath = file("../credentials.json").toString()
+            def credsFile = new File(credsFilePath, "").getText('UTF-8')
+            def json = new groovy.json.JsonSlurper().parseText(credsFile)
+            storeFile file(json.android.storeFile)
+            storePassword = json.android.storePassword
+            keyAlias = json.android.keyAlias
+            keyPassword = json.android.keyPassword
         }
     }
 
     defaultConfig {
         applicationId "com.rogergcc.asistenciaqrapp"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -63,14 +63,14 @@ dependencies {
 
 
 //    implementation 'com.google.android.gms:play-services-base:11.0.1'
-    implementation 'com.google.android.gms:play-services-base:11.6.0'
-    implementation 'com.google.android.gms:play-services-identity:11.6.0'
-    implementation 'com.google.android.gms:play-services-auth:11.6.0'
-    implementation 'com.google.android.gms:play-services-auth-api-phone:11.6.0'
+    implementation 'com.google.android.gms:play-services-base:17.6.0'
+    implementation 'com.google.android.gms:play-services-identity:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.0'
 
 
-
+//    implementation 'com.king.zxing:zxing-lite:2.0.2'
 
     implementation 'com.edwardvanraak:MaterialBarcodeScanner:0.0.6-ALPHA'
-    implementation 'com.google.android.gms:play-services-vision:11.6.0'
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
 }

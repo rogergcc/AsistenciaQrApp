@@ -19,4 +19,12 @@
     <string name="camera_permission_granted">Camera Permisos Otorgados.</string>
     <string name="bt_numero_cel">VERIFICAR NUMERO</string>
     <string name="btn_cambiar_numero">CAMBIAR NUMERO</string>
+
+
+    <string name="allow_camera"> El código de escaneo de la aplicación requiere permiso para disparar </string>
+    <string name="allow_external_storage"> La aplicación necesita usar permisos de lectura y escritura </string>
+    <string name="tips_scan_code"> ponga el código QR / código de barras en el cuadro, puede escanearlo automáticamente </string>
+    <string name="qr_code"> código bidimensional </string>
+    <string name="bar_code"> código de barras </string>
+
 </resources>
